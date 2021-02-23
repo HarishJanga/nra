@@ -9,4 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+<servlet>
+<servlet-name>uloginservlet</servlet-name>
+<servlet-class>uloginservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>uloginservlet</servlet-name>
+<url-pattern>/uloginservlet</url-pattern>
+</servlet-mapping>
 </web-app>
