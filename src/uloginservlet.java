@@ -49,7 +49,7 @@ public class uloginservlet extends HttpServlet {
 			PrintWriter out=response.getWriter();
 			   out.println("<script type=\"text/javascript\">");
 			   out.println("alert('incorrect username or password');");
-			   out.println("location='clogin.html';");
+			   out.println("location='login.html';");
 			   out.println("</script>");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
