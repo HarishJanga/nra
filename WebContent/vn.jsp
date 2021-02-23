@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edit Note-Details</title>
+<title>Note-Details</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -72,38 +72,34 @@ while(rs.next())
                 <h5 class="modal-title ml-auto"><%=n%> Details</h5>
             </div>
             <div class="modal-body">
-            <form method="post" action="./unservlet">
-            <input type="hidden" value="<%=n%>" name="one">
-			<table class="table table-striped table-responsive">
+			<table class="table table-striped table-responsive table-md">
   <tbody>
     <tr>
       <th scope="row">Start Date</th>
-      <td><input type="text" name="two" value="<%=startd%>"></td>
+      <td><%=startd%></td>
     </tr>
     <tr>
       <th scope="row">End Date</th>
-      <td><input type="text" name="three" value="<%=endd%>"></td>
+      <td><%=endd%></td>
     </tr>
     <tr>
       <th scope="row">Reminder Date</th>
-      <td><input type="text" name="four" value="<%=rdate%>"></td>
+      <td><%=rdate%></td>
     </tr>
     <tr>
       <th scope="row">Status</th>
-      <td><input type="text" name="five" value="<%=status_n%>"></td>
+      <td><%=status_n%></td>
     </tr>
     <tr>
       <th scope="row">Tag</th>
-      <td><input type="text" name="six" value="<%=tag_n%>"></td>
+      <td><%=tag_n%></td>
     </tr>
     <tr>
       <th scope="row">Description</th>
-      <td><input type="text" name="seven" value="<%=desc_n%>"></td>
+      <td><%=desc_n%></td>
     </tr>
   </tbody>
-</table>
-<button class="btn btn-outline-primary col-md-12" type="submit">Update</button>
-</form>	
+</table>	
             </div>
         </div>
     </div>
