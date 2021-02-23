@@ -15,9 +15,8 @@
 	$(document).ready(function(){
 		$("#myModal").modal('show');
 	});
-	function rd()
+	function rdfp()
 	{
-		console.log("clicked");
 		window.location="logu.jsp";
 	}
 </script>
@@ -44,17 +43,17 @@ stmt=con.createStatement();
 n=request.getParameter("fck");
 %>
 <body>
-<form action="./dnservlet" method="post">
+<form method="post" action="./dnservlet">
 <div id="myModal" class="modal fade">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
             <input type="hidden" name="one" value="<%=n%>">
-			<h5>Are you sure You want to delete?</h5>	
+			<h5>Are you sure You want to delete <%=n%>?</h5>	
             </div>
         <div class="modal-footer">
-        <button onclick="rd()" class="btn btn-danger">Cancel</button>
         <button type="submit" class="btn btn-primary">Delete</button>
+        <button type="button" onclick="rdfp()" class="btn btn-danger">Cancel</button>
         </div>
         </div>
     </div>

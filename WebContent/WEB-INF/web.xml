@@ -42,6 +42,14 @@
 <url-pattern>/unservlet</url-pattern>
 </servlet-mapping>
 <servlet>
+<servlet-name>anservlet</servlet-name>
+<servlet-class>anservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>anservlet</servlet-name>
+<url-pattern>/anservlet</url-pattern>
+</servlet-mapping>
+<servlet>
 <servlet-name>dnservlet</servlet-name>
 <servlet-class>dnservlet</servlet-class>
 </servlet>

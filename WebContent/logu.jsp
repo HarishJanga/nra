@@ -194,7 +194,7 @@ while (rs.next()) {
         </button>
       </div>
       <div class="modal-body">
-        <form action="./adnts.jsp" method="post">
+        <form action="./anservlet" method="post">
         <input type="hidden" value="<%=un%>" name="uname">
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -242,7 +242,7 @@ while (rs.next()) {
           <h6 class="modal-title">Notifications</h6>
           <button type="button" class="close" data-dismiss="modal">×</button>
         </div>
-        <div class="modal-body bg-secondary">
+        <div class="modal-body bg-transparent">
         <%ResultSet rsd=stmt.executeQuery("select name_n,endd from unotes where rdate='"+cd+"' and uname='"+un+"'");%>
         <%while(rsd.next()){ %>
         <div class="card">
