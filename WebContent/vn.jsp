@@ -63,16 +63,15 @@ while(rs.next())
 }
 %>
 <body>
-<div class="container-fluid">
 <div id="myModal" class="modal fade">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
             <span onclick="rd()"><i class="fa fa-arrow-left mr-auto" style="font-size:25px;"></i></span>
-                <h5 class="modal-title ml-auto"><%=n%> Details</h5>
+                <h5 class="modal-title ml-auto"><%=n%>-Details</h5>
             </div>
             <div class="modal-body">
-			<table class="table table-striped table-responsive table-md">
+			<table class="table table-striped">
   <tbody>
     <tr>
       <th scope="row">Start Date</th>
@@ -103,7 +102,6 @@ while(rs.next())
             </div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

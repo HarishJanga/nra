@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edit Note-Details</title>
+<title>Note-Details</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -69,12 +69,12 @@ while(rs.next())
         <div class="modal-content">
             <div class="modal-header">
             <span onclick="rd()"><i class="fa fa-arrow-left mr-auto" style="font-size:25px;"></i></span>
-                <h5 class="modal-title ml-auto"><%=n%> Details</h5>
+                <h5 class="modal-title ml-auto">Edit <%=n%>-Details</h5>
             </div>
             <div class="modal-body">
             <form method="post" action="./unservlet">
             <input type="hidden" value="<%=n%>" name="one">
-			<table class="table table-striped table-responsive">
+			<table class="table table-striped">
   <tbody>
     <tr>
       <th scope="row">Start Date</th>
